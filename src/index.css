@@ -1,0 +1,45 @@
+/* Identidad visual de Café Aurora sobre Bootstrap. */
+:root {
+  --cafe: #6f4e37;
+  --cafe-oscuro: #4b3621;
+  --crema: #f5efe6;
+}
+
+body {
+  background-color: var(--crema);
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Color de marca reutilizable. */
+.text-cafe {
+  color: var(--cafe) !important;
+}
+
+.navbar-cafe {
+  background-color: var(--cafe);
+}
+
+.footer-cafe {
+  background-color: var(--cafe-oscuro);
+  color: var(--crema);
+}
+
+/* Tarjetas del catálogo: imagen recortada uniforme y leve elevación al pasar. */
+.item-card .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.item-card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.item-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Resalta el enlace de la categoría activa en la NavBar. */
+.navbar-cafe .nav-link.active {
+  font-weight: 600;
+  text-decoration: underline;
+}
