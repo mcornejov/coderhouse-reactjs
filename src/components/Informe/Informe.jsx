@@ -1,5 +1,6 @@
 import { Container, Row, Col, Table, Badge } from 'react-bootstrap'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
+import { ordenEjemplo } from '../../data/ordenEjemplo'
 
 const REPO_URL = 'https://github.com/mcornejov/coderhouse-reactjs'
 const DEPLOY_URL = 'https://mcornejov.github.io/coderhouse-reactjs/'
@@ -37,22 +38,8 @@ const ARBOL = `App
  │    └── CartItem
  └── CheckoutForm`
 
-// Ejemplo de documento de orden (el objeto que genera el checkout y que se
-// registrará como documento en la colección "ordenes" de Firestore).
-const ORDEN_EJEMPLO = `{
-  "id": "ORD-LXY8QZ4A",
-  "comprador": {
-    "nombre": "María Pérez",
-    "email": "maria@example.com",
-    "telefono": "+56 9 1234 5678"
-  },
-  "items": [
-    { "id": "1", "nombre": "Aurora Clásico", "precio": 7990, "cantidad": 2 },
-    { "id": "8", "nombre": "Prensa Francesa 600 ml", "precio": 19990, "cantidad": 1 }
-  ],
-  "total": 35970,
-  "fecha": "05-06-2026 10:24:11"
-}`
+// El ejemplo de orden se toma de src/data/ordenEjemplo.js (fuente única).
+const ORDEN_EJEMPLO = JSON.stringify(ordenEjemplo, null, 2)
 
 const INSTALACION = `git clone https://github.com/mcornejov/coderhouse-reactjs
 cd coderhouse-reactjs
