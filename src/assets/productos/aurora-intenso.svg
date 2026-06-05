@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-label="Aurora Intenso">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5e4530"/>
+      <stop offset="1" stop-color="#2f2014"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <circle cx="64" cy="338" r="120" fill="#ffffff" opacity="0.04"/>
+  <circle cx="548" cy="66" r="92" fill="#ffffff" opacity="0.05"/>
+  <text x="300" y="60" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="21" letter-spacing="6" fill="#f5efe6" opacity="0.85">CAFÉ AURORA</text>
+  <line x1="252" y1="76" x2="348" y2="76" stroke="#f5efe6" stroke-width="2" opacity="0.45"/>
+  
+  
+  <g transform="translate(258 205) rotate(-20)">
+    <ellipse rx="52" ry="74" fill="#f5efe6"/>
+    <path d="M0 -62 Q -16 0 0 62" fill="none" stroke="#4b3621" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  
+  <g transform="translate(348 215) rotate(-20)">
+    <ellipse rx="52" ry="74" fill="#f5efe6"/>
+    <path d="M0 -62 Q -16 0 0 62" fill="none" stroke="#4b3621" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <text x="300" y="362" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="25" fill="#f5efe6">Aurora Intenso</text>
+</svg>

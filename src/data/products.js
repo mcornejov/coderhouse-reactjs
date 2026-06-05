@@ -1,5 +1,20 @@
 // Catálogo mock de Café Aurora.
 // Más adelante esta data se reemplaza por una colección de Firestore.
+//
+// Las imágenes son ilustraciones SVG locales (en src/assets/productos). Se
+// importan para que el bundler resuelva la ruta final con el base correcto
+// (incluido el subdirectorio de GitHub Pages). Al migrar a Firestore, el campo
+// img pasará a ser una URL almacenada en la base de datos.
+import imgAuroraClasico from '../assets/productos/aurora-clasico.svg'
+import imgAuroraIntenso from '../assets/productos/aurora-intenso.svg'
+import imgAuroraDescafeinado from '../assets/productos/aurora-descafeinado.svg'
+import imgMolidoCasa from '../assets/productos/molido-casa.svg'
+import imgMolidoEspresso from '../assets/productos/molido-espresso.svg'
+import imgCapsulasAurora from '../assets/productos/capsulas-aurora.svg'
+import imgCapsulasIntenso from '../assets/productos/capsulas-intenso.svg'
+import imgPrensaFrancesa from '../assets/productos/prensa-francesa.svg'
+import imgMolinilloManual from '../assets/productos/molinillo-manual.svg'
+import imgTazaAurora from '../assets/productos/taza-aurora.svg'
 
 export const categorias = [
   { id: 'granos', label: 'Granos' },
@@ -16,7 +31,7 @@ export const productos = [
     precio: 7990,
     stock: 25,
     descripcion: 'Blend de la casa en grano, tueste medio. Notas a chocolate y caramelo, ideal para todos los días.',
-    img: 'https://placehold.co/600x400/6f4e37/ffffff?text=Aurora+Clasico',
+    img: imgAuroraClasico,
   },
   {
     id: '2',
@@ -25,7 +40,7 @@ export const productos = [
     precio: 8990,
     stock: 18,
     descripcion: 'Grano de tueste oscuro y cuerpo robusto. Perfecto para quienes buscan un espresso con carácter.',
-    img: 'https://placehold.co/600x400/4b3621/ffffff?text=Aurora+Intenso',
+    img: imgAuroraIntenso,
   },
   {
     id: '3',
@@ -34,7 +49,7 @@ export const productos = [
     precio: 8490,
     stock: 12,
     descripcion: 'Todo el sabor de Aurora sin cafeína. Proceso al agua que conserva los aromas del grano.',
-    img: 'https://placehold.co/600x400/8a6240/ffffff?text=Descafeinado',
+    img: imgAuroraDescafeinado,
   },
   {
     id: '4',
@@ -43,7 +58,7 @@ export const productos = [
     precio: 6990,
     stock: 30,
     descripcion: 'Café molido de molienda media, versátil para cafetera de filtro o prensa francesa.',
-    img: 'https://placehold.co/600x400/6f4e37/ffffff?text=Molido+Casa',
+    img: imgMolidoCasa,
   },
   {
     id: '5',
@@ -52,7 +67,7 @@ export const productos = [
     precio: 7490,
     stock: 20,
     descripcion: 'Molienda fina pensada para máquinas de espresso. Crema densa y final dulce.',
-    img: 'https://placehold.co/600x400/4b3621/ffffff?text=Molido+Espresso',
+    img: imgMolidoEspresso,
   },
   {
     id: '6',
@@ -61,7 +76,7 @@ export const productos = [
     precio: 4990,
     stock: 40,
     descripcion: 'Caja de 10 cápsulas compatibles. La intensidad equilibrada de Aurora en un solo gesto.',
-    img: 'https://placehold.co/600x400/a47551/ffffff?text=Capsulas+x10',
+    img: imgCapsulasAurora,
   },
   {
     id: '7',
@@ -70,7 +85,7 @@ export const productos = [
     precio: 5490,
     stock: 15,
     descripcion: 'Caja de 10 cápsulas de intensidad alta para amantes del café fuerte.',
-    img: 'https://placehold.co/600x400/4b3621/ffffff?text=Capsulas+Intenso',
+    img: imgCapsulasIntenso,
   },
   {
     id: '8',
@@ -79,7 +94,7 @@ export const productos = [
     precio: 19990,
     stock: 8,
     descripcion: 'Prensa de vidrio borosilicato y acero inoxidable. Prepara hasta 4 tazas con cuerpo y aroma.',
-    img: 'https://placehold.co/600x400/333333/ffffff?text=Prensa+Francesa',
+    img: imgPrensaFrancesa,
   },
   {
     id: '9',
@@ -88,7 +103,7 @@ export const productos = [
     precio: 24990,
     stock: 5,
     descripcion: 'Molinillo con fresas cerámicas y molienda regulable. Muele tu café justo antes de prepararlo.',
-    img: 'https://placehold.co/600x400/333333/ffffff?text=Molinillo',
+    img: imgMolinilloManual,
   },
   {
     id: '10',
@@ -97,6 +112,6 @@ export const productos = [
     precio: 5990,
     stock: 22,
     descripcion: 'Taza de cerámica esmaltada de 300 ml con el logo de Café Aurora. Mantiene la temperatura.',
-    img: 'https://placehold.co/600x400/a47551/ffffff?text=Taza+Aurora',
+    img: imgTazaAurora,
   },
 ]

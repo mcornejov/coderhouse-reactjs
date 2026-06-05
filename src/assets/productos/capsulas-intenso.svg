@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-label="Cápsulas Intenso x10">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7d5836"/>
+      <stop offset="1" stop-color="#4b3621"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <circle cx="64" cy="338" r="120" fill="#ffffff" opacity="0.04"/>
+  <circle cx="548" cy="66" r="92" fill="#ffffff" opacity="0.05"/>
+  <text x="300" y="60" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="21" letter-spacing="6" fill="#f5efe6" opacity="0.85">CAFÉ AURORA</text>
+  <line x1="252" y1="76" x2="348" y2="76" stroke="#f5efe6" stroke-width="2" opacity="0.45"/>
+  
+  <g>
+    <ellipse cx="300" cy="158" rx="58" ry="14" fill="#e7dccb"/>
+    <path d="M242 158 L358 158 L334 296 Q332 308 320 308 L280 308 Q268 308 266 296 Z" fill="#f5efe6"/>
+    <ellipse cx="300" cy="158" rx="44" ry="9" fill="#4b3621" opacity="0.35"/>
+    <rect x="270" y="300" width="60" height="14" rx="4" fill="#4b3621"/>
+  </g>
+  <text x="300" y="362" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="25" fill="#f5efe6">Cápsulas Intenso x10</text>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-label="Prensa Francesa 600 ml">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5a4636"/>
+      <stop offset="1" stop-color="#2f2418"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <circle cx="64" cy="338" r="120" fill="#ffffff" opacity="0.04"/>
+  <circle cx="548" cy="66" r="92" fill="#ffffff" opacity="0.05"/>
+  <text x="300" y="60" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="21" letter-spacing="6" fill="#f5efe6" opacity="0.85">CAFÉ AURORA</text>
+  <line x1="252" y1="76" x2="348" y2="76" stroke="#f5efe6" stroke-width="2" opacity="0.45"/>
+  
+  <g>
+    <rect x="248" y="172" width="104" height="146" rx="14" fill="#f5efe6" opacity="0.92"/>
+    <path d="M248 250 H352 V304 Q352 318 338 318 L262 318 Q248 318 248 304 Z" fill="#2f2418"/>
+    <rect x="236" y="150" width="128" height="26" rx="9" fill="#c2c6cc"/>
+    <rect x="294" y="104" width="12" height="48" fill="#8d9298"/>
+    <circle cx="300" cy="100" r="14" fill="#c2c6cc"/>
+    <path d="M352 206 q44 8 44 52 q0 40 -46 40" fill="none" stroke="#f5efe6" stroke-width="13"/>
+  </g>
+  <text x="300" y="362" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="25" fill="#f5efe6">Prensa Francesa 600 ml</text>
+</svg>

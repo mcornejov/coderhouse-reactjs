@@ -43,3 +43,44 @@ body {
   font-weight: 600;
   text-decoration: underline;
 }
+
+/* Portada: hero con degradado de marca. */
+.portada-hero {
+  background: linear-gradient(135deg, var(--cafe) 0%, var(--cafe-oscuro) 100%);
+}
+
+.portada-kicker {
+  letter-spacing: 3px;
+  font-size: 0.8rem;
+  opacity: 0.85;
+}
+
+/* Tarjetas de acceso de la portada: leve elevación al pasar el cursor. */
+.acceso-card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.acceso-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Informe: índice fijo en escritorio y desplazamiento que respeta el navbar. */
+.informe-indice {
+  position: sticky;
+  top: 84px;
+}
+
+.informe section {
+  scroll-margin-top: 84px;
+}
+
+/* Bloques de código/datos dentro del informe. */
+.informe-code {
+  background-color: #2f2418;
+  color: var(--crema);
+  padding: 1rem 1.25rem;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  overflow-x: auto;
+  white-space: pre;
+}

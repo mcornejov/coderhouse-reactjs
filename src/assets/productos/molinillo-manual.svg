@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-label="Molinillo Manual">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5a4636"/>
+      <stop offset="1" stop-color="#2f2418"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <circle cx="64" cy="338" r="120" fill="#ffffff" opacity="0.04"/>
+  <circle cx="548" cy="66" r="92" fill="#ffffff" opacity="0.05"/>
+  <text x="300" y="60" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="21" letter-spacing="6" fill="#f5efe6" opacity="0.85">CAFÉ AURORA</text>
+  <line x1="252" y1="76" x2="348" y2="76" stroke="#f5efe6" stroke-width="2" opacity="0.45"/>
+  
+  <g>
+    <rect x="296" y="118" width="8" height="46" fill="#8d9298"/>
+    <path d="M300 122 H346" stroke="#8d9298" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="349" cy="122" r="10" fill="#c2c6cc"/>
+    <circle cx="300" cy="120" r="8" fill="#c2c6cc"/>
+    <rect x="262" y="160" width="76" height="36" rx="7" fill="#e7dccb"/>
+    <rect x="255" y="192" width="90" height="126" rx="12" fill="#f5efe6"/>
+    <rect x="266" y="276" width="68" height="34" rx="5" fill="#2f2418"/>
+    <circle cx="300" cy="293" r="6" fill="#f5efe6"/>
+  </g>
+  <text x="300" y="362" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="25" fill="#f5efe6">Molinillo Manual</text>
+</svg>

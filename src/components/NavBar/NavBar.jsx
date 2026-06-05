@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react'
-import { Navbar, Nav, Container } from 'react-bootstrap'
+import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap'
 import { Link, NavLink } from 'react-router-dom'
 import { getCategorias } from '../../services/productService'
 import CartWidget from '../CartWidget/CartWidget'
 
-// Barra de navegación: marca, enlaces a las categorías y el CartWidget.
-// Las categorías se cargan de forma dinámica desde el servicio.
+// Barra de navegación: marca, enlaces internos (Inicio, Tienda, Categorías,
+// Informe) y el CartWidget. Las categorías se cargan dinámicamente del servicio.
 const NavBar = () => {
   const [categorias, setCategorias] = useState([])
 
@@ -23,11 +23,23 @@ const NavBar = () => {
             <Nav.Link as={NavLink} to="/" end>
               Inicio
             </Nav.Link>
-            {categorias.map((categoria) => (
-              <Nav.Link as={NavLink} key={categoria.id} to={`/category/${categoria.id}`}>
-                {categoria.label}
-              </Nav.Link>
-            ))}
+            <Nav.Link as={NavLink} to="/tienda">
+              Tienda
+            </Nav.Link>
+            <NavDropdown title="Categorías" id="nav-categorias">
+              {categorias.map((categoria) => (
+                <NavDropdown.Item
+                  as={NavLink}
+                  key={categoria.id}
+                  to={`/category/${categoria.id}`}
+                >
+                  {categoria.label}
+                </NavDropdown.Item>
+              ))}
+            </NavDropdown>
+            <Nav.Link as={NavLink} to="/informe">
+              Informe
+            </Nav.Link>
           </Nav>
           <CartWidget />
         </Navbar.Collapse>
